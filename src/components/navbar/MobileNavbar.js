@@ -14,8 +14,8 @@ export default function MobileNavbar() {
   return (
     <>
       {isExpanded ?
-        <nav className="navbar navbar-expand-lg bg-body-tertiary bg-light-blue">
-          <div className='w-100 h-100 bg-light-blue d-flex justify-content-between '>
+        <nav className="navbar navbar-expand-lg">
+          <div className='w-100 h-100 d-flex justify-content-between bg-light-blue'>
             <div className='c-nav-logo pt-3 ps-4'>
               <img className='w-25' src={Logo} />
             </div>
@@ -25,8 +25,8 @@ export default function MobileNavbar() {
           </div>
         </nav>
         :
-        <nav className="navbar navbar-expand-lg bg-body-tertiary c-mobile-navbar">
-          <div className='w-100 h-100 d-flex justify-content-between '>
+        <nav className="navbar navbar-expand-lg c-mobile-navbar">
+          <div className='w-100 d-flex justify-content-between '>
             <div className='c-nav-logo pt-3 ps-4'>
               <img className='w-25' src={Logo} />
             </div>
@@ -34,7 +34,7 @@ export default function MobileNavbar() {
               <img className='w-75' src={expandIcon} />
             </div>
           </div>
-          <div className='z-1 w-100 h-100 pt-2 ps-4 ms-1 mt-1'>
+          <div className='c-mobile-submenu z-1 w-100 pt-3 ps-4 ms-1 mt-1'>
             <div className='ps-1'>
               <Link className='text-light h6' to='/'>Home</Link>
             </div>
@@ -57,13 +57,14 @@ export default function MobileNavbar() {
             <div className='ps-1 mt-4'>
               <Link className='text-light h6 text-decoration-none' to='/'>Contact</Link>
             </div>
-            <div className='ps-1 mt-4 pt-2'>
+            <div className='ps-1 mt-4 pt-3'>
               <Link className='text-white cu-account-button'>Account</Link>
             </div>
-            <div className='py-5 mt-3 ms-2'>
+            <div className='py-5 mt-4 ms-2'>
               <i className="bi bi-facebook text-light h3"></i>
               <i className="bi bi-instagram text-light h3 ps-4"></i>
             </div>
+            <button type="button" class="btn bg-light-blue text-white px-5">Book Now</button>
           </div>
         </nav>
       }
