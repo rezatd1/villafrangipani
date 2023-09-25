@@ -1,0 +1,27 @@
+$light-blue: #3FB6C3;
+$middle-blue: #0A6E70;
+$dark-blue: #172A36;
+
+.light-blue {
+    color: $light-blue;
+}
+
+.middle-blue {
+    color: $middle-blue;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+.bg-light-blue {
+    background-color: $light-blue !important;
+}
+
+.bg-middle-blue {
+    background-color: $middle-blue !important;
+}
+
+.bg-dark-blue {
+    background-color: $dark-blue !important;
+}
