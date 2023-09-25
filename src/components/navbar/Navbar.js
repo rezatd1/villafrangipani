@@ -8,8 +8,8 @@ import MobileNavbar from './MobileNavbar';
 export default function Navbar() {
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary bg-light-blue">
+    <>
       {CommonHelper.isMobileDevice() ? <MobileNavbar /> : <DesktopNavbar />}
-    </nav>
+    </>
   );
 }

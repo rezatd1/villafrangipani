@@ -1,7 +1,19 @@
+
+
 .navbar {
     .container-fluid {
         .dropdown-menu {
             right: 0.2rem;
         }
     }
+
+    .cu-account-button {
+        font-size: 2rem;
+        text-decoration: none;
+    }
+}
+
+.c-mobile-navbar {
+    background-color: red !important;
+    transition: 2s;
 }
