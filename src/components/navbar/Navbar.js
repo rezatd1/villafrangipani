@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import CommonHelper from '../../utilities/commonHelper/CommonHelper';
 
+import CommonHelper from '../../utilities/commonHelper/CommonHelper';
 import './navbar.scss';
 import DesktopNavbar from './DesktopNavbar';
 import MobileNavbar from './MobileNavbar';
