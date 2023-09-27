@@ -1,6 +1,7 @@
 $light-blue: #3FB6C3;
 $middle-blue: #0A6E70;
 $dark-blue: #172A36;
+$light-blue-bg :#EAF1F6;
 
 .light-blue {
     color: $light-blue;
@@ -24,4 +25,8 @@ $dark-blue: #172A36;
 
 .bg-dark-blue {
     background-color: $dark-blue !important;
+}
+
+.bg-light-blue {
+    background-color: $light-blue-bg !important;
 }
