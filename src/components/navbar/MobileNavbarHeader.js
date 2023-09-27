@@ -2,9 +2,10 @@ import React from 'react';
 
 import Logo from '../../assets/img/logo-220.png';
 
-export default function MobileNavbarHeader({ navContainerClassName, toggleIcon, onToggle }) {
+export default function MobileNavbarHeader({ navContainerClassName, toggleIcon, onToggle, childsSetter }) {
     const navbarToggler = () => {
         onToggle('Some data');
+        childsSetter([]);
     };
 
     return (
@@ -12,7 +13,7 @@ export default function MobileNavbarHeader({ navContainerClassName, toggleIcon, 
             <div className='c-nav-logo pt-3 ps-4'>
                 <img className='w-25' src={Logo} />
             </div>
-            <div className='h4 pt-3 pe-4 pb-2' onClick={navbarToggler}>
+            <div className='h4 pt-3 pe-4 pb-2 cursor-pointer' onClick={navbarToggler}>
                 <img className='w-75' src={toggleIcon} />
             </div>
         </div>

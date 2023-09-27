@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 import Icon from '../../assets/img/left-arrow-10.png'
 
-export default function MobileNavbarItem({ className, linkClassName, name, imgClassName }) {
+export default function MobileNavbarItem({ keyId, className, onClick, linkClassName, name, imgClassName }) {
     return (
-        <div className={className}>
+        <div key={keyId} className={className} onClick={onClick}>
             <Link className={linkClassName} >{name}</Link>
             <img className={imgClassName} src={Icon}></img>
         </div>)
