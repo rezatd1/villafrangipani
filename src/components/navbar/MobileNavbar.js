@@ -24,7 +24,7 @@ export default function MobileNavbar() {
     setSlideEndTransition(false);
   };
 
-  const navbarClass = isExpanded ? 'navbar navbar-expand-lg c-mobile-navbar-expand' : 'navbar navbar-expand-lg c-mobile-navbar';
+  const navbarClass = isExpanded ? 'navbar navbar-expand-lg c-mobile-navbar-expand py-0' : 'navbar navbar-expand-lg c-mobile-navbar';
   const fadeClass = disableMenu ? 'fade-out' : '';
 
   return (
