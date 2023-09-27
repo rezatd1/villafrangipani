@@ -18,13 +18,17 @@ export default function DesktopNavbar() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                    <div className="navbar-nav">
-                        {/* <div className="nav-item">
-                            <Link className="nav-link active" to="/">Home</Link>
-                        </div> */}
+                    <div className="navbar-nav d-flex align-items-center">
                         {navbarResources.map(item =>
                             <DesktopNavItem menu={item.name} submenu={item.childs} />
                         )}
+                        <div className='ms-4 ps-2 d-flex flex-row flex-nowrap'>
+                            <i class="bi bi-facebook text-white h3 mb-0"></i>
+                            <i class="bi bi-instagram text-white h3 ms-4 ps-2 mb-0"></i>
+                        </div>
+                        <div className='mx-4'>
+                            <button type="button" class="btn btn-light text-info py-3 px-4">Book now</button>
+                        </div>
                     </div>
                 </div>
             </div>
