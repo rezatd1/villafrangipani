@@ -108,11 +108,12 @@ const Calendar = () => {
     const calendarEventChecker = () => {
         const apiUrl = '';
         fetch(
-            'https://agents.baliluxuryvillas.com/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI',{mode: 'no-cors'}
+            'https://agents.baliluxuryvillas.com/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI', { mode: 'no-cors' }
         )
             .then((response) => response.text())
             .then((icalData) => {
                 const formattedEvents = parseICalendarData(icalData);
+                console.log('***formattedEvents', formattedEvents);
                 setEvents(formattedEvents);
                 setIsLoading(false);
             })
