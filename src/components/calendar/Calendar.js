@@ -3,7 +3,6 @@ import './Calendar.scss';
 import CommonHelper from '../../utilities/commonHelper/CommonHelper';
 import rightArrow from '../../assets/img/right-arrow-15-black.png';
 import leftArrow from '../../assets/img/left-arrow-15-black.png';
-import axios from 'axios';
 
 const Calendar = () => {
     const [date, setDate] = useState(new Date());
@@ -107,22 +106,24 @@ const Calendar = () => {
     };
 
     const calendarEventChecker = () => {
-        axios
-          .get(
+        fetch(
             'https://46.249.102.250:9999/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI'
-          )
-          .then((response) => {
-            const icalData = response.data;
-            console.log('***icalData', icalData);
-            const formattedEvents = parseICalendarData(icalData);
-            setEvents(formattedEvents);
-            setIsLoading(false);
-          })
-          .catch((error) => {
-            console.log(error);
-            setIsLoading(false);
-          });
-      };
+        )
+            .then((response) => {
+                response.text();
+                console.log('***response', response.text());
+            })
+            .then((icalData) => {
+                const formattedEvents = parseICalendarData(icalData);
+                console.log('***icalData', icalData);
+                setEvents(formattedEvents);
+                setIsLoading(false);
+            })
+            .catch((error) => {
+                console.log(error);
+                setIsLoading(false);
+            });
+    };
 
     return (
         <div className="w-100 d-flex justify-content-center">
