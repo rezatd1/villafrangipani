@@ -109,13 +109,9 @@ const Calendar = () => {
         fetch(
             'http://46.249.102.250:9999/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI'
         )
-            .then((response) => {
-                response.text();
-                console.log('***response', response.text());
-            })
+            .then((response) => response.text())
             .then((icalData) => {
                 const formattedEvents = parseICalendarData(icalData);
-                console.log('***icalData', icalData);
                 setEvents(formattedEvents);
                 setIsLoading(false);
             })
