@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar with Events</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+            height: 100vh;
+            font-size: 0.8rem;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            position: relative;
+            padding: 5px;
+            text-align: center;
+            border: 5px solid white;
+            background-color: #EEEDEB;
+            width: 100px;
+            height: 100px;
+        }
+
+        td .event-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+        }
+
+        th {
+            padding: 10px;
+            text-align: center;
+            color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+
+        .today {
+            background-color: #ce1414;
+            font-weight: bold;
+        }
+
+        .event {
+            background-color: transparent;
+        }
+
+        .normal-day {
+            background-color: #EEEDEB;
+        }
+
+        .normal-day .day-square .day-number {
+            background-color: #EEEDEB;
+            border: none;
+        }
+
+        .arrow-calendar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.6rem;
+        }
+
+        .arrow-calendar-container img {
+            width: 1.1rem;
+        }
+
+        #activeMonth {
+            font-size: 1.7rem;
+            color: grey;
+        }
+
+        .arrow-calendar {
+            display: flex;
+            align-items: center;
+        }
+
+        .day-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            border: 5px white solid;
+            background-color: white;
+        }
+
+        .day-square {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 30px;
+            height: 30px;
+            background-color: transparent;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-calendar-container">
+        <div class="arrow-calendar-container">
+            <div class="arrow-calendar" onclick="previousMonth()">
+                <img src="./media/icons8-arrow-50-previous.png">
+            </div>
+            <div id="activeMonth"></div>
+            <div class="arrow-calendar" onclick="nextMonth()">
+                <img src="./media/icons8-arrow-50-next.png">
+            </div>
+        </div>
+        <div id="calendar"></div>
+    </div>
+
+    <script>
+        let currentYear;
+        let currentMonth;
+
+        const events = [
+            {
+                UID: "20231022_130000_Frangipani",
+                DTSTART: "2023-10-22T13:00:00Z",
+                DTEND: "2023-10-27T10:00:00Z",
+                IMAGE_URL: "https://images.squarespace-cdn.com/content/v1/645efd8204ce186445584a41/1686472330572-RYWCHT1UOF8BO1YY9KFX/Booked-logo.png",
+            },
+            {
+                UID: "20231102_130000_Frangipani",
+                DTSTART: "2023-11-02T13:00:00Z",
+                DTEND: "2023-11-07T10:00:00Z",
+                IMAGE_URL: "https://images.squarespace-cdn.com/content/v1/645efd8204ce186445584a41/1686472330572-RYWCHT1UOF8BO1YY9KFX/Booked-logo.png", 
+            },
+        ];
+
+        function updateActiveMonth(year, month) {
+            const months = [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ];
+
+            const activeMonthDiv = document.getElementById("activeMonth");
+            const activeMonthText = months[month - 1] + " " + year;
+            activeMonthDiv.textContent = activeMonthText;
+        }
+
+        function createCalendar(year, month) {
+            currentYear = year;
+            currentMonth = month;
+
+            const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+            const date = new Date(year, month - 1, 1);
+            const today = new Date();
+            const calendar = document.getElementById("calendar");
+
+            calendar.innerHTML = "";
+
+            const table = document.createElement("table");
+            const thead = document.createElement("thead");
+            const tr = document.createElement("tr");
+            weekdays.forEach(function (weekday) {
+                const th = document.createElement("th");
+                th.textContent = weekday;
+                tr.appendChild(th);
+            });
+            thead.appendChild(tr);
+            table.appendChild(thead);
+
+            const tbody = document.createElement("tbody");
+            let row = document.createElement("tr");
+            let isCurrentMonth = false;
+
+            while (!isCurrentMonth || date.getMonth() === month - 1) {
+                if (!isCurrentMonth) {
+                    if (date.getDate() === 1) {
+                        isCurrentMonth = true;
+                    } else {
+                        date.setDate(date.getDate() + 1);
+                        continue;
+                    }
+                }
+
+                const td = document.createElement("td");
+
+                const daySquare = document.createElement("div");
+                daySquare.classList.add("day-square");
+
+                const dayNumber = document.createElement("div");
+                dayNumber.classList.add("day-number");
+                dayNumber.textContent = date.getDate();
+
+                daySquare.appendChild(dayNumber);
+
+                td.appendChild(daySquare);
+
+                if (isCurrentMonth) {
+                    td.classList.add("event");
+
+                    const event = events.find(event => {
+                        const eventStartDate = new Date(event.DTSTART);
+                        const eventEndDate = new Date(event.DTEND);
+                        return (
+                            date >= eventStartDate &&
+                            date <= eventEndDate
+                        );
+                    });
+
+                    if (event) {
+                        const eventBg = document.createElement("div");
+                        eventBg.classList.add("event-bg");
+                        eventBg.style.backgroundImage = `url(${event.IMAGE_URL})`;
+                        td.appendChild(eventBg);
+                    } else {
+
+                        td.classList.add("normal-day");
+                    }
+                }
+
+                row.appendChild(td);
+
+                if (date.getDay() === 6) {
+                    tbody.appendChild(row);
+                    row = document.createElement("tr");
+                }
+                date.setDate(date.getDate() + 1);
+            }
+
+            tbody.appendChild(row);
+            table.appendChild(tbody);
+            calendar.appendChild(table);
+            updateActiveMonth(year, month);
+        }
+
+        function previousMonth() {
+            currentMonth--;
+            if (currentMonth < 1) {
+                currentMonth = 12;
+                currentYear--;
+            }
+            createCalendar(currentYear, currentMonth);
+        }
+
+        function nextMonth() {
+            currentMonth++;
+            if (currentMonth > 12) {
+                currentMonth = 1;
+                currentYear++;
+            }
+            createCalendar(currentYear, currentMonth);
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const today = new Date();
+            createCalendar(today.getFullYear(), today.getMonth() + 1);
+        });
+    </script>
+</body>
+
+</html>
