@@ -109,7 +109,7 @@ const Calendar = () => {
     const calendarEventChecker = () => {
         axios
           .get(
-            'http://46.249.102.250:9999/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI'
+            'https://46.249.102.250:9999/api/api.php?MOD=462&AGENT=OWNER_KENT_552_1370&VILLA=1370&NAME=FRANGIPANI'
           )
           .then((response) => {
             const icalData = response.data;
