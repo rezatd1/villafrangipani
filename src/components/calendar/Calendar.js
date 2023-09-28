@@ -112,7 +112,7 @@ const Calendar = () => {
         )
             .then((response) => {
                 response.text();
-                console.log('***response', response);
+                console.log('***response', response.text());
             })
             .then((icalData) => {
                 const formattedEvents = parseICalendarData(icalData);
