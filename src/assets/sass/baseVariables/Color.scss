@@ -1,7 +1,9 @@
-$light-blue: #3FB6C3;
+$light-blue: #3fb6c3;
 $middle-blue: #0A6E70;
 $dark-blue: #172A36;
 $light-gray-bg :#EAF1F6;
+$light-blue-08: rgba(63, 182, 195, 0.8);
+$light-golden: #F6F4F2;
 
 .light-blue {
     color: $light-blue;
@@ -13,6 +15,10 @@ $light-gray-bg :#EAF1F6;
 
 .dark-blue {
     color: $dark-blue;
+}
+
+.light-golden {
+    color: $light-golden
 }
 
 .bg-light-blue {
@@ -33,4 +39,12 @@ $light-gray-bg :#EAF1F6;
 
 .cu-bg-white {
     background-color: white;
+}
+
+.bg-light-blue-08 {
+    background-color: $light-blue-08;
+}
+
+.bg-light-golden {
+    background-color: $light-golden !important;
 }

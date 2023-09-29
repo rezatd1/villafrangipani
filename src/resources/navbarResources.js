@@ -1,5 +1,3 @@
-import s from '../assets/img/left-arrow-10.png'
-
 const navbarResources = [{
   id: 1,
   className: 'ps-1',
