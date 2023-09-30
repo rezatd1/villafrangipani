@@ -14,7 +14,7 @@ import QuickFacts from './QuickFacts';
 
 export default function Home() {
     return (
-        <div>
+        <div className='bg-light-golden'>
             <Navbar />
             <GalleryOne img={HomeResourses[0].img}
                 imgClassName={HomeResourses[0].imgClassName}
@@ -26,6 +26,7 @@ export default function Home() {
             <GallerySection />
             <FullWidthBanner img={BannerResources[0].bannerImg} />
             <QuickFacts />
+            <FullWidthBanner img={BannerResources[1].bannerImg} />
             <Footer />
             <CopyRight />
         </div>
