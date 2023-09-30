@@ -1,14 +1,23 @@
 import React from 'react';
 import GalleryOne from '../../components/galley/GalleryOne';
-import HomeResourses from '../../resources/HomeResources';
+import HomeResources from '../../resources/HomeResources';
 
 export default function GallerySection() {
+    const renderGalleryItem = (index) => {
+        const { img, imgClassName, textContainerClass, title } = HomeResources[index];
+        return (
+            <GalleryOne key={index} img={img} imgClassName={imgClassName} textContainerClass={textContainerClass} title={title} />
+        );
+    };
+
     return (
-        <div className='bg-light-golden py-5 w-100 px-2'>
-            <GalleryOne img={HomeResourses[1].img}
-                imgClassName={HomeResourses[1].imgClassName}
-                textContainerClass={HomeResourses[1].textContainerClass}
-                title={HomeResourses[1].title} />
+        <div className='bg-light-golden pb-4'>
+            <div className='px-4 row d-flex justify-content-center mx-2'>
+                {[1, 2].map((index) => renderGalleryItem(index))}
+            </div>
+            <div className='px-5 row d-flex justify-content-center mt-2'>
+                {[3, 4, 5].map((index) => renderGalleryItem(index))}
+            </div>
         </div>
-    )
+    );
 }

@@ -9,8 +9,8 @@ export default function About({ img, title, about }) {
         <div className='row d-flex justify-content-center px-5 mt-4'>
           <div className='col-lg-6 col-md-5 col-sm-12 col-12 img-container px-lg-5 px-md-4 px-sm-0' style={{ background: `url(${img})`, minHeight: '350px' }}>
           </div>
-          <div className='col-lg-6 col-md-6 col-sm-12 col-12 text-container px-lg-5 px-md-4 px-sm-0'>
-          {about}
+          <div className='col-lg-6 col-md-6 col-sm-12 col-12 text-container px-lg-5 px-md-4 px-sm-0 mt-sm-3'>
+            {about}
           </div>
         </div>
       </div>

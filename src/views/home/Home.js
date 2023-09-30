@@ -7,6 +7,7 @@ import HomeResourses from '../../resources/HomeResources';
 import AboutResources from '../../resources/AboutResources';
 import About from '../../components/about/About';
 import GallerySection from './GallerySection';
+import './home.scss';
 
 export default function Home() {
     return (
@@ -16,7 +17,7 @@ export default function Home() {
                 imgClassName={HomeResourses[0].imgClassName}
                 textContainerClass={HomeResourses[0].textContainerClass}
                 title={HomeResourses[0].title} />
-            <About img={AboutResources[0].about}
+            <About img={AboutResources[0].img}
                 title={AboutResources[0].title}
                 about={AboutResources[0].about} />
             <GallerySection />

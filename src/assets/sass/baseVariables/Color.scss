@@ -3,6 +3,7 @@ $middle-blue: #0A6E70;
 $dark-blue: #172A36;
 $light-gray-bg :#EAF1F6;
 $light-blue-08: rgba(63, 182, 195, 0.8);
+$light-blue-09: rgba(63, 182, 195, 0.9);
 $light-golden: #F6F4F2;
 
 .light-blue {
@@ -43,6 +44,10 @@ $light-golden: #F6F4F2;
 
 .bg-light-blue-08 {
     background-color: $light-blue-08;
+}
+
+.bg-light-blue-09 {
+    background-color: $light-blue-09;
 }
 
 .bg-light-golden {
