@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Calendar.scss';
-import CommonHelper from '../../utilities/commonHelper/CommonHelper';
+
 import rightArrow from '../../assets/img/right-arrow-15-black.png';
 import leftArrow from '../../assets/img/left-arrow-15-black.png';
 
@@ -13,10 +13,6 @@ const Calendar = () => {
         calendarEventChecker();
     }, []);
 
-    useEffect(() => {
-        console.log('***events', events);
-    }, [events]);
-
     const daysInMonth = () => {
         const year = date.getFullYear();
         const month = date.getMonth();
@@ -27,41 +23,39 @@ const Calendar = () => {
         const totalDays = daysInMonth();
         const firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
         const days = [];
-
-        const eventDates = events.map((event) => ({
-            start: new Date(event.DTSTART),
-            end: new Date(event.DTEND),
-        }));
-
+    
         for (let i = 0; i < firstDay; i++) {
             days.push(<div key={`empty-${i}`} className="calendar-day empty"></div>);
         }
-
+    
         for (let day = 1; day <= totalDays; day++) {
             const currentDate = new Date(date.getFullYear(), date.getMonth(), day);
-
-            const isEventDay = eventDates.some(
-                (eventDate) =>
-                    currentDate >= eventDate.start && currentDate <= eventDate.end
-            );
-
+    
+            const isEventDay = events.some((event) => {
+                const eventStartDate = new Date(event.DTSTART);
+                const eventEndDate = new Date(event.DTEND);
+                return (
+                    (currentDate >= eventStartDate && currentDate <= eventEndDate) ||
+                    currentDate.toDateString() === eventStartDate.toDateString()
+                );
+            });
+    
             const dayClass = isEventDay ? 'calendar-day event-day' : 'calendar-day';
-
+    
             days.push(
                 <div
                     key={day}
-                    className={`${!CommonHelper.isMobileDevice()
-                        ? 'responsive-lg-width p-2'
-                        : 'responsive-sm-width p-1'
-                        } ${dayClass}`}
+                    className={`responsive-lg-width p-2 ${dayClass}`}
                 >
                     <span>{day}</span>
                 </div>
             );
         }
-
+    
         return days;
     };
+    
+    
 
     const nextMonth = () => {
         setDate(new Date(date.getFullYear(), date.getMonth() + 1, 1));
@@ -138,14 +132,15 @@ const Calendar = () => {
                         <img className="navigation-icon" src={rightArrow} alt="Next Month" />
                     </div>
                 </div>
-                {isLoading ?
+                {isLoading ? (
                     <div className='w-100 d-flex justify-content-center'>
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
+                        <div className="spinner-border" role="status">
+                            <span className="visually-hidden">Loading...</span>
                         </div>
                     </div>
-                    :
-                    <div className="calendar-grid">{renderCalendar()}</div>}
+                ) : (
+                    <div className="calendar-grid">{renderCalendar()}</div>
+                )}
             </div>
         </div>
     );
