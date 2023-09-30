@@ -5,9 +5,12 @@ import CopyRight from '../../components/copyright/CopyRight';
 import GalleryOne from '../../components/galley/GalleryOne';
 import HomeResourses from '../../resources/HomeResources';
 import AboutResources from '../../resources/AboutResources';
+import BannerResources from '../../resources/BannerResources';
 import About from '../../components/about/About';
 import GallerySection from './GallerySection';
 import './home.scss';
+import FullWidthBanner from '../../components/banner/FullWidthBanner';
+import QuickFacts from './QuickFacts';
 
 export default function Home() {
     return (
@@ -21,6 +24,8 @@ export default function Home() {
                 title={AboutResources[0].title}
                 about={AboutResources[0].about} />
             <GallerySection />
+            <FullWidthBanner img={BannerResources[0].bannerImg} />
+            <QuickFacts />
             <Footer />
             <CopyRight />
         </div>

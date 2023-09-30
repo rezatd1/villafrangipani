@@ -11,7 +11,7 @@ export default function GallerySection() {
     };
 
     return (
-        <div className='bg-light-golden pb-4'>
+        <div className='bg-light-golden pb-4 gallery-section'>
             <div className='px-4 row d-flex justify-content-center mx-2'>
                 {[1, 2].map((index) => renderGalleryItem(index))}
             </div>

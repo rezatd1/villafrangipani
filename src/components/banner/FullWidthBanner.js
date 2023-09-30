@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import './banner.scss';
 
-export default function FullWidthBanner() {
-  return (
-    <div>FullWidthBanner</div>
-  )
+export default function FullWidthBanner({ img }) {
+    return (
+        <div className='w-100 full-banner-width' style={{ background: `url(${img})` }}>
+        </div>
+    )
 }
