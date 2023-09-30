@@ -4,7 +4,6 @@ import Footer from '../../../components/footer/Footer';
 import CopyRight from '../../../components/copyright/CopyRight';
 import PageTitle from './PageTitle';
 import Description from '../../../components/description/Description';
-import Slider from '../../../components/slider/Slider';
 import SliderSection from './SliderSection';
 
 export default function RoomsAndMore() {
@@ -13,7 +12,6 @@ export default function RoomsAndMore() {
             <Navbar />
             <PageTitle />
             <Description />
-            {/* <Slider /> */}
             <SliderSection />
             <Footer />
             <CopyRight />

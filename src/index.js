@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import App from './App';
 import CheckDates from './views/availability/checkDates/CheckDates';
@@ -13,7 +14,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/the-villa" element={<RoomsAndMore />}>
-        <Route path="rooms-and-mores" element={<RoomsAndMore />} />
+        <Route path="rooms-and-more" element={<RoomsAndMore />} />
       </Route>
       <Route path="/availability" element={<CheckDates />}>
         <Route path="check-dates" element={<CheckDates />} />

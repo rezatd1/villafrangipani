@@ -11,8 +11,6 @@ export default function DesktopNavItem({ menu, submenu }) {
         setIsDropdownOpen(false);
     };
 
-    console.log('***submenu', submenu)
-
     return (
         <div
             className="nav-item dropdown"
