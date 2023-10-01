@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import App from './App';
 import CheckDates from './views/availability/checkDates/CheckDates';
 import RoomsAndMore from './views/theVilla/roomsAndMores/RoomsAndMore';
+import Gallery from './views/theVilla/gallery/Gallery';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,10 +17,12 @@ ReactDOM.render(
       <Route path="/the-villa" element={<RoomsAndMore />}>
         <Route path="rooms-and-more" element={<RoomsAndMore />} />
       </Route>
+      <Route path="/the-villa/gallery" element={<Gallery />} />
       <Route path="/availability" element={<CheckDates />}>
         <Route path="check-dates" element={<CheckDates />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </BrowserRouter>
+  ,
   document.getElementById('root')
 );
