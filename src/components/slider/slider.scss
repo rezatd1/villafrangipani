@@ -1,3 +1,48 @@
 .slider-title {
     font-family: 'Roboto', sans-serif;
 }
+
+.overlay-img {
+    height: 680px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center -200px !important;
+
+}
+
+.text-container {
+    position: relative;
+    right: 10rem;
+    top: 1rem;
+}
+
+.overlay-title {
+    line-height: 2.4rem;
+}
+
+.overlay-text {
+    line-height: 2rem;
+}
+
+.overlay-slider {
+    position: relative;
+    left: 5rem;
+}
+
+.rtl-overlay-img {
+    height: 680px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+}
+
+.rtl-text-container {
+    position: relative;
+    left: 8rem;
+    bottom: 2rem;
+}
+
+.rtl-overlay-slider {
+    position: relative;
+    right: 5rem;
+}
