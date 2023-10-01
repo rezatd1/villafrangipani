@@ -1,7 +1,7 @@
 import React from 'react';
 import BaseSlider from './BaseSlider';
 
-const Slider = ({ title, info, img }) => {
+const Slider = ({ title, info, img, id }) => {
     return (
         <div className='row light-gray-bg p-5 my-5'>
             <div className='col-12 col-lg-5 col-md-12 col-sm-12'>
@@ -15,7 +15,7 @@ const Slider = ({ title, info, img }) => {
                 </div>
             </div>
             <div className='col-12 col-lg-7 col-md-12 col-sm-7'>
-                <BaseSlider img={img} title={title}/>
+                <BaseSlider img={img} title={title} carouselId={`carousel${id}`} />
             </div>
         </div>
     );
