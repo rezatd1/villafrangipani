@@ -46,3 +46,25 @@
     position: relative;
     right: 5rem;
 }
+
+.mobile-overlay-slider {
+    height: 270px;
+    background-position: center -200px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.mobile-overlay-slider-static {
+    height: 270px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.mobile-overlay-text {
+    line-height: 1.6rem;
+}
+
+.mobile-overlay-container-text {
+    position: relative;
+    bottom: 10rem;
+}
