@@ -16,6 +16,7 @@ import Family from './views/experience/family/Family';
 import Staff from './views/experience/staff/Staff';
 import Map from './views/Location/map/Map';
 import Neighbourhood from './views/Location/neighbourhood/Neighbourhood';
+import Beachclubs from './views/Location/beachclubs/Beachclubs';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -33,6 +34,7 @@ ReactDOM.render(
       <Route path="/location" element={<Map />} />
       <Route path="/location/map" element={<Map />} />
       <Route path="/location/neighbourhood" element={<Neighbourhood />} />
+      <Route path="/location/beachclubs" element={<Beachclubs />} />
       <Route path="/availability" element={<CheckDates />}>
         <Route path="check-dates" element={<CheckDates />} />
       </Route>
