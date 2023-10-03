@@ -14,6 +14,7 @@ import Dining from './views/experience/dining/Dining';
 import Menu from './views/experience/menu/Menu';
 import Family from './views/experience/family/Family';
 import Staff from './views/experience/staff/Staff';
+import Map from './views/Location/map/Map';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -28,6 +29,8 @@ ReactDOM.render(
       <Route path="/experience/menu" element={<Menu />} />
       <Route path="/experience/family" element={<Family />} />
       <Route path="/experience/staff" element={<Staff />} />
+      <Route path="/location" element={<Map />} />
+      <Route path="/location/map" element={<Map />} />
       <Route path="/availability" element={<CheckDates />}>
         <Route path="check-dates" element={<CheckDates />} />
       </Route>
