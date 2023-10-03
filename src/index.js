@@ -13,6 +13,7 @@ import FloorPlan from './views/theVilla/floorPlan/FloorPlan';
 import Dining from './views/experience/dining/Dining';
 import Menu from './views/experience/menu/Menu';
 import Family from './views/experience/family/Family';
+import Staff from './views/experience/staff/Staff';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/experience/dining" element={<Dining />} />
       <Route path="/experience/menu" element={<Menu />} />
       <Route path="/experience/family" element={<Family />} />
+      <Route path="/experience/staff" element={<Staff />} />
       <Route path="/availability" element={<CheckDates />}>
         <Route path="check-dates" element={<CheckDates />} />
       </Route>

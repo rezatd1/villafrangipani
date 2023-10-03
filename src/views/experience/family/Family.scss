@@ -1,0 +1,10 @@
+.cu-btn-outline {
+    border: 1px solid rgba(63, 182, 195, 0.8);
+    border-radius: 0px;
+
+    &:hover {
+        background-color: rgba(63, 182, 195, 0.8);
+        color: white;
+        border: 1px solid rgba(63, 182, 195, 0.8);
+    }
+}
