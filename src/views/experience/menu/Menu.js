@@ -9,10 +9,6 @@ import MenuItems from './MenuItems';
 export default function Menu() {
   const [activePage, setActivePage] = useState(1);
 
-  useEffect(()=> {
-    console.log(activePage)
-  },[activePage])
-
   return (
     <div className='bg-light-golden'>
       <Navbar />

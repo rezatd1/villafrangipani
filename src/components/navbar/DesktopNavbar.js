@@ -18,14 +18,14 @@ export default function DesktopNavbar() {
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <div className="navbar-nav d-flex align-items-center">
                         {navbarResources.map(item =>
-                            <DesktopNavItem menu={item.name} submenu={item.childs} />
+                            <DesktopNavItem menu={item} submenu={item.childs} />
                         )}
                         <div className='ms-4 ps-2 d-flex flex-row flex-nowrap'>
                             <a href='https://www.facebook.com/VillaFrangipaniWelcome/'><i class="bi bi-facebook text-white h3 mb-0"></i></a>
                             <a href='https://www.instagram.com/villa_frangipani/'><i class="bi bi-instagram text-white h3 ms-4 ps-2 mb-0"></i></a>
                         </div>
                         <div className='mx-4 book-btn'>
-                            <a href='https://villafrangipani.id/contact'><button type="button" class="btn cu-bg-white light-blue py-3 px-4 book-btn">Book now</button></a>
+                            <button type="button" class="btn cu-bg-white light-blue py-3 px-4 book-btn"><Link className='light-blue text-decoration-none' to='/contact'>Book now</Link></button>
                         </div>
                     </div>
                 </div>

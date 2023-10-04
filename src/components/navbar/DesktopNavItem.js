@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function DesktopNavItem({ menu, submenu }) {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -17,12 +18,12 @@ export default function DesktopNavItem({ menu, submenu }) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <a className={`nav-link text-white fw-bold ${submenu.length > 0 ? 'dropdown-toggle' : ''}`} href="/" role="button" data-bs-toggle="dropdown" aria-expanded={isDropdownOpen}>
-                {menu}
-            </a>
+            <Link className={`nav-link text-white fw-bold ${submenu.length > 0 ? 'dropdown-toggle' : ''}`} to={menu.route} >
+                {menu.name}
+            </Link>
             {submenu.length > 0 ?
                 <div className={`dropdown-menu border-0 rounded-0 bg-light-blue ${isDropdownOpen ? ' show' : ''}`}>
-                    {submenu.map(item => <div key={item.id}><a className="dropdown-item text-white fw-bold" href={item.route}>{item.submenu}</a></div>)}
+                    {submenu.map(item => <div key={item.id}><Link className="dropdown-item text-white fw-bold" to={item.route}>{item.submenu}</Link></div>)}
                 </div> : null}
         </div >
     )

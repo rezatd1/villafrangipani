@@ -1,0 +1,185 @@
+$cyan: #3fb6c3;
+$paleCyan: #eaf1f6;
+$bg: #f6f4f2;
+
+.contactContainer {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $bg;
+  padding: 10px 20px 80px;
+
+  @media screen and (max-width: 761px) {
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+
+  .side {
+    width: 40%;
+    padding: 0 20px;
+    text-transform: capitalize;
+    align-self: flex-start;
+    &__header__1 {
+      font-size: 2rem;
+      color: $cyan;
+      line-height: 3;
+    }
+    &__header__2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      line-height: 2.5;
+    }
+    .par {
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
+    @media screen and (max-width: 761px) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 20px 4px;
+    @media screen and (max-width: 761px) {
+      width: 100%;
+    }
+    label {
+      display: block;
+      font-size: 0.9rem;
+      line-height: 2.5;
+    }
+
+    input,
+    select {
+      outline: none;
+      border: 1px solid grey;
+      padding: 8px;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    .wrapper {
+      margin: 10px 0;
+    }
+    &__name__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__name__firstname,
+    &__name__lastname {
+      width: 49%;
+
+      input {
+        width: 100%;
+      }
+    }
+    &__name {
+      font-size: 1.2rem;
+      span {
+        text-transform: lowercase;
+      }
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+
+    &__phone {
+      width: 100%;
+      font-size: 1.2rem;
+
+      &__country {
+        width: 40%;
+        select {
+          width: 100%;
+          padding: 12px 0;
+        }
+      }
+
+      &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .form__phone__number {
+          width: 59%;
+
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__email {
+      input {
+        width: 100%;
+      }
+      label {
+        font-size: 1.2rem;
+      }
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+
+    &__date {
+      input[type="date"] {
+        max-width: 200px;
+        width: 60%;
+      }
+
+      label {
+        font-size: 1.2rem;
+      }
+
+      &__arrival {
+        // Styles for the arrival date modifier of the date element
+      }
+
+      &__departure {
+        // Styles for the departure date modifier of the date element
+      }
+    }
+
+    &__message {
+      width: 100%;
+      label {
+        font-size: 1.2rem;
+      }
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+        text-transform: lowercase;
+      }
+    }
+
+    &__submit {
+      width: 120px;
+      height: 70px;
+      border: none;
+      outline: none;
+
+      color: white;
+      background-color: $cyan;
+      border-radius: 6px;
+      text-transform: uppercase;
+      transition: opacity 0.2s ease-in-out;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

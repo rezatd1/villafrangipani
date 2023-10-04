@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import leftArrow from '../../assets/img/right-arrow-10.png';
 
 export default function MobileNavbarChilds({ childs, onBackClick }) {
   const [transitionStatus, setTransitionStatus] = useState(false);
-
   if (childs.length <= 1) return null;
 
   const handleBackClick = () => {
@@ -21,7 +20,7 @@ export default function MobileNavbarChilds({ childs, onBackClick }) {
         </div>
         {childs.map((item, index) => (
           <div key={index} className='d-flex flex-column'>
-            <Link className='mb-4 pb-1 text-white text-decoration-none'>{item}</Link>
+            <Link to={item.route} className='mb-4 pb-1 text-white text-decoration-none'>{item.submenu}</Link>
           </div>
         ))}
       </div>

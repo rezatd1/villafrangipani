@@ -5,7 +5,7 @@ import RtlSlider from '../../../components/slider/RtlSlider';
 
 export default function SliderSection() {
     return (
-        <div className='mx-5 row d-flex justify-content-center'>
+        <div className='mx-2 mx-lg-5 mx-md-3 mx-sm-2 row d-flex justify-content-center'>
             <div className='col-10'>
                 <RtlSlider id={SliderResources[0].id} title={SliderResources[0].title} info={SliderResources[0].info} img={SliderResources[0].img} />
                 <Slider id={SliderResources[1].id} title={SliderResources[1].title} info={SliderResources[1].info} img={SliderResources[1].img} />

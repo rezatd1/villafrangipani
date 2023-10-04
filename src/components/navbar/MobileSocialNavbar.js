@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MobileSocialNavbar() {
     return (
@@ -7,7 +8,9 @@ export default function MobileSocialNavbar() {
                 <i className="bi bi-facebook text-light h3"></i>
                 <i className="bi bi-instagram text-light h3 ps-4"></i>
             </div>
-            <button type="button" className="btn bg-light-blue text-white px-5">Book Now</button>
+            <button type="button" className="btn bg-light-blue text-white px-5">
+                <Link to='/contact' className='text-white text-decoration-none'>Book Now</Link>
+            </button>
         </div>
     )
 }

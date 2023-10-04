@@ -6,9 +6,11 @@ import GallerySection from './GallerySection';
 
 export default function Gallery() {
     return (
-        <div>
+        <div className='light-gray-bg'>
             <Navbar />
-            <GallerySection />
+            <div className='my-4'>
+                <GallerySection />
+            </div>
             <Footer />
             <CopyRight />
         </div>

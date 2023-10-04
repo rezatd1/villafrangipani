@@ -28,7 +28,7 @@ export default function MobileNavbar() {
   const fadeClass = disableMenu ? 'fade-out' : '';
 
   return (
-    <nav className={`${navbarClass} ${fadeClass}`}>
+    <nav className={`${navbarClass} ${fadeClass} z-2`}>
       <MobileNavbarHeader
         navContainerClassName={isExpanded ? 'bg-light-blue' : ''}
         toggleIcon={isExpanded ? expandIcon : collapseIcon}
