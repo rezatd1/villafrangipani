@@ -19,6 +19,7 @@ import Neighbourhood from './views/Location/neighbourhood/Neighbourhood';
 import Beachclubs from './views/Location/beachclubs/Beachclubs';
 import Attractions from './views/Location/attractions/Attractions';
 import Reviews from './views/availability/reviews/Reviews';
+import Rates from './views/availability/rates/Rates';
 
 ReactDOM.render(
   <BrowserRouter>
