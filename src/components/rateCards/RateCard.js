@@ -2,9 +2,7 @@ import "./RateCard.scss";
 
 export default function RateCard({ title, list, bigCard }) {
   return (
-    <article
-      className={`${bigCard ? "big--card" : "small--card"}  p-4 rounded-4`}
-    >
+    <article className={`${bigCard ? "big--card" : "small--card"}  p-4 `}>
       <h2 className={`title ${bigCard ? "color--white" : "color--cyan"}`}>
         {title}
       </h2>

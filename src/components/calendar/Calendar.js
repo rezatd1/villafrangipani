@@ -16,6 +16,69 @@ const Calendar = () => {
     calendarEventChecker();
   }, []);
 
+  function getMonthDay(event) {
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    const dtStart = new Date(event.DTSTART);
+    const month = months[dtStart.getMonth()];
+    const day = dtStart.getDate();
+
+    return `${month} ${day}`;
+  }
+
+  function formatDate(event) {
+    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    const dtStart = new Date(event.DTSTART);
+    const dtEnd = new Date(event.DTEND);
+
+    const formattedStartDate = `${daysOfWeek[dtStart.getDay()]}, ${
+      months[dtStart.getMonth()]
+    }, ${dtStart.getDate()}, ${formatTime(dtStart)}`;
+    const formattedEndDate = `${daysOfWeek[dtEnd.getDay()]}, ${
+      months[dtEnd.getMonth()]
+    }, ${dtEnd.getDate()}, ${formatTime(dtEnd)}`;
+
+    return `${formattedStartDate} - ${formattedEndDate}`;
+  }
+
+  function formatTime(date) {
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const ampm = hours >= 12 ? "pm" : "am";
+    const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+    const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
+
+    return `${formattedHours}:${formattedMinutes} ${ampm}`;
+  }
+
   const daysInMonth = () => {
     const year = date.getFullYear();
     const month = date.getMonth();
@@ -51,7 +114,8 @@ const Calendar = () => {
       });
 
       const dayClass = isEventDay ? "calendar-day event-day" : "calendar-day";
-
+      const formatedDate = formatDate(events[0]);
+      const startMoth = getMonthDay(events[0]);
       days.push(
         <div
           key={day}
@@ -65,6 +129,8 @@ const Calendar = () => {
             <Hover
               display={toggleHover}
               uid={eventForDay && eventForDay["UID"]}
+              date={formatedDate}
+              startDate={startMoth}
             />
           )}
           <span>{day}</span>

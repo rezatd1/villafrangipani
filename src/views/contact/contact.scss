@@ -8,52 +8,55 @@ $bg: #f6f4f2;
   padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: $bg;
+  padding: 10px 20px 80px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 761px) {
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 10px 30px;
   }
 
   .side {
-    width: 50%;
+    width: 40%;
     padding: 0 20px;
     text-transform: capitalize;
+    align-self: flex-start;
     &__header__1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: $cyan;
       line-height: 3;
     }
     &__header__2 {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 600;
-      line-height: 2;
+      line-height: 2.5;
     }
     .par {
-      font-size: 1rem;
+      font-size: 1.2rem;
       line-height: 1;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 761px) {
       width: 100%;
     }
   }
 
   .form {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-transform: capitalize;
     padding: 20px 4px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 761px) {
       width: 100%;
     }
     label {
       display: block;
-      font-size: 1;
+      font-size: 0.9rem;
+      line-height: 2.5;
     }
 
     input,
@@ -68,15 +71,25 @@ $bg: #f6f4f2;
     }
 
     .wrapper {
-      margin: 20px 0;
+      margin: 10px 0;
     }
     &__name__wrapper {
       display: flex;
       justify-content: space-between;
     }
-    &__name {
-      font-size: 1.1rem;
+    &__name__firstname,
+    &__name__lastname {
+      width: 49%;
 
+      input {
+        width: 100%;
+      }
+    }
+    &__name {
+      font-size: 1.2rem;
+      span {
+        text-transform: lowercase;
+      }
       &__required {
         font-size: 0.9rem;
         color: gray;
@@ -84,23 +97,37 @@ $bg: #f6f4f2;
     }
 
     &__phone {
-      font-size: 1rem;
+      width: 100%;
+      font-size: 1.2rem;
 
       &__country {
+        width: 40%;
         select {
-          width: 80%;
+          width: 100%;
           padding: 12px 0;
         }
       }
 
       &__wrapper {
+        width: 100%;
         display: flex;
+        justify-content: space-between;
+        .form__phone__number {
+          width: 59%;
+
+          input {
+            width: 100%;
+          }
+        }
       }
     }
 
     &__email {
       input {
         width: 100%;
+      }
+      label {
+        font-size: 1.2rem;
       }
       &__required {
         font-size: 0.9rem;
@@ -110,7 +137,12 @@ $bg: #f6f4f2;
 
     &__date {
       input[type="date"] {
+        max-width: 200px;
         width: 60%;
+      }
+
+      label {
+        font-size: 1.2rem;
       }
 
       &__arrival {
@@ -124,18 +156,22 @@ $bg: #f6f4f2;
 
     &__message {
       width: 100%;
+      label {
+        font-size: 1.2rem;
+      }
       &__required {
         font-size: 0.9rem;
         color: gray;
+        text-transform: lowercase;
       }
     }
 
     &__submit {
-      width: 140px;
-      height: 60px;
+      width: 120px;
+      height: 70px;
       border: none;
       outline: none;
-      padding: 40px 20px;
+
       color: white;
       background-color: $cyan;
       border-radius: 6px;

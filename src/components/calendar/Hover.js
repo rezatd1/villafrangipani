@@ -1,13 +1,15 @@
 import "./hover.scss";
 
-export default function Hover({ display, date }) {
+export default function Hover({ display, date, startDate }) {
   console.log(date);
   return (
     <div className={`hover ${display && "visible"}`}>
-      <h3 className="hover__header">Villa Booking - </h3>
+      <h3 className="hover__header">
+        Villa Booking - {startDate} {"\u2192"}
+      </h3>
 
       {/* Date */}
-      <h4>{date}</h4>
+      <h4 className="date">{date}</h4>
 
       <p>
         Villa Frangipani Canguu <br />

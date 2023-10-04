@@ -27,7 +27,7 @@ export default function Rates() {
           Above Rates are quoted in US Dollars per night and are subject to
           15.5% tax & service charge. Rates are valid until 31 March, 2024
         </p>
-        <p className="par disscout">
+        <p className="par disscount">
           Discounts for stays of 14 or more nights: 10%
         </p>
       </div>

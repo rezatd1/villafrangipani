@@ -25,6 +25,18 @@ export default function Layout() {
       <Outlet />
 
       <Footer />
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          background: "#00000031",
+          display: toggle ? "block" : "none",
+          zIndex: "50",
+          position: "absolute",
+          left: "0",
+          top: "0",
+        }}
+      ></div>
       <Login
         toggle={toggle}
         email={"something@email.com"}
