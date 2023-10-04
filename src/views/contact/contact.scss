@@ -1,0 +1,149 @@
+$cyan: #3fb6c3;
+$paleCyan: #eaf1f6;
+$bg: #f6f4f2;
+
+.contactContainer {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .side {
+    width: 50%;
+    padding: 0 20px;
+    text-transform: capitalize;
+    &__header__1 {
+      font-size: 1.5rem;
+      color: $cyan;
+      line-height: 3;
+    }
+    &__header__2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 2;
+    }
+    .par {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: capitalize;
+    padding: 20px 4px;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+    label {
+      display: block;
+      font-size: 1;
+    }
+
+    input,
+    select {
+      outline: none;
+      border: 1px solid grey;
+      padding: 8px;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    .wrapper {
+      margin: 20px 0;
+    }
+    &__name__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__name {
+      font-size: 1.1rem;
+
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+
+    &__phone {
+      font-size: 1rem;
+
+      &__country {
+        select {
+          width: 80%;
+          padding: 12px 0;
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+      }
+    }
+
+    &__email {
+      input {
+        width: 100%;
+      }
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+
+    &__date {
+      input[type="date"] {
+        width: 60%;
+      }
+
+      &__arrival {
+        // Styles for the arrival date modifier of the date element
+      }
+
+      &__departure {
+        // Styles for the departure date modifier of the date element
+      }
+    }
+
+    &__message {
+      width: 100%;
+      &__required {
+        font-size: 0.9rem;
+        color: gray;
+      }
+    }
+
+    &__submit {
+      width: 140px;
+      height: 60px;
+      border: none;
+      outline: none;
+      padding: 40px 20px;
+      color: white;
+      background-color: $cyan;
+      border-radius: 6px;
+      text-transform: uppercase;
+      transition: opacity 0.2s ease-in-out;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

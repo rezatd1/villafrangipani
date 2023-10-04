@@ -1,0 +1,141 @@
+.loginpage {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  width: 440px;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+
+  &.block {
+    display: flex;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    color: rgb(71, 71, 71);
+  }
+
+  div {
+    width: 100%;
+    padding: 20px 5px;
+
+    border-radius: 5px;
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: rgb(43, 43, 43);
+  }
+
+  h2 {
+    font-size: 1rem;
+    color: rgb(71, 71, 71);
+  }
+
+  h5 {
+    font-size: 0.7rem;
+    color: gray;
+  }
+
+  .container__account {
+    position: relative;
+    &__header {
+      // Styles for .container__account__header
+    }
+
+    &__button {
+      position: absolute;
+      top: 50%;
+      translate: -50% -50%;
+      right: 0;
+      text-transform: uppercase;
+      font-size: 0.6rem;
+    }
+  }
+
+  .container__verfication {
+    // Styles for .container__verfication
+
+    .container__verfication__button {
+      color: rgb(0, 153, 255);
+    }
+  }
+
+  .container__greeting {
+    // Styles for .container__greeting
+    &__header {
+      // Styles for .container__greeting__header
+    }
+
+    &__signout {
+      // Styles for .container__greeting__signout
+      font-size: 0.7rem;
+      color: gray;
+    }
+  }
+
+  .container__orders {
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.13);
+    }
+    // Styles for .container__orders
+    &__header__1 {
+      // Styles for .container__orders__header__1
+    }
+
+    &__header__2 {
+      // Styles for .container__orders__header__2
+    }
+  }
+
+  .container__address {
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.13);
+    }
+    // Styles for .container__address
+    &__header__1 {
+      // Styles for .container__address__header__1
+    }
+
+    &__header__2 {
+      // Styles for .container__address__header__2
+    }
+  }
+
+  .container__profile {
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(128, 128, 128, 0.13);
+    }
+    // Styles for .container__profile
+    &__header__1 {
+      // Styles for .container__profile__header__1
+    }
+
+    &__header__2 {
+      // Styles for .container__profile__header__2
+    }
+  }
+}

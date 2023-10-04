@@ -17,6 +17,7 @@ import "./assets/sass/baseVariables/Color.scss";
 import "./assets/sass/baseVariables/Fonts.scss";
 import Home from "./views/home/Home";
 import Layout from "./Layout";
+import Contact from "./views/contact/Contact";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="check-dates" element={<CheckDates />} />
               <Route path="rates" element={<Rates />} />
             </Route>
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>
