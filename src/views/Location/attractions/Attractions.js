@@ -15,7 +15,7 @@ export default function Attractions() {
             <PageHeader
                 title='Exploring Bali Attractions'
                 text="Explore Bali's stunning landscapes and cultural sites, including Uluwatu Temple, Tegalalang Rice Terraces, Mount Batur, and Lempuyang Temple. Surf the island's legendary breaks and trek to Nusa Penida's hidden beaches."
-                titleClassName='light-blue'
+                titleClassName='light-blue font-size-2-1'
                 textClassName='' />
             <FigureSection />
             <Footer />

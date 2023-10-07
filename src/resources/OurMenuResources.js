@@ -12,7 +12,7 @@ const OurMenuResource = [
             { id: 9, text: 'DESSERTS' }]
     },
     {
-        id: 2, page: 'welcome', info: [{
+        id: 2, page: 'WELCOME', info: [{
             id: 1,
             title: 'We know that a good holiday includes good food and Chef Wayan will do his best to meet your dietary requirements. Please do let him know any dietary restrictions or allergies in advance.',
             text: null,
