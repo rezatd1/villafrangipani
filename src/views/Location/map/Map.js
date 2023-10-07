@@ -18,7 +18,7 @@ export default function Map() {
                         <Link className='light-blue' to='/location/neighbourhood'>Our Neighbourhood.</Link>
                     </>
                 }
-                titleClassName='light-blue'
+                titleClassName='light-blue font-size-2-1'
                 textClassName=''
             />
             <MapSection />

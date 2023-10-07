@@ -18,12 +18,12 @@ export default function DesktopNavItem({ menu, submenu }) {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <Link className={`nav-link text-white fw-bold ${submenu.length > 0 ? 'dropdown-toggle' : ''}`} to={menu.route} >
+            <Link className={`nav-link text-white ${submenu.length > 0 ? 'dropdown-toggle' : ''}`} to={menu.route} >
                 {menu.name}
             </Link>
             {submenu.length > 0 ?
                 <div className={`dropdown-menu border-0 rounded-0 bg-light-blue ${isDropdownOpen ? ' show' : ''}`}>
-                    {submenu.map(item => <div key={item.id}><Link className="dropdown-item text-white fw-bold" to={item.route}>{item.submenu}</Link></div>)}
+                    {submenu.map(item => <div key={item.id}><Link className="dropdown-item text-white font-size-1-1" to={item.route}>{item.submenu}</Link></div>)}
                 </div> : null}
         </div >
     )

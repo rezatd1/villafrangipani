@@ -8,7 +8,7 @@ export default function BaseSlider({ img, title, carouselId }) {
                 <div className="carousel-item active">
                     <img src={img[0].img} className="d-block w-100" />
                     <div className="carousel-caption d-none d-md-block bg-light-blue-09 p-3">
-                        <h5 className='w-auto'>{title}</h5>
+                        <h5 className='w-auto cu-font-thin mb-0 mb-2 mt-2'>{title}</h5>
                     </div>
                 </div>
                 {img.length > 1 ?
@@ -16,7 +16,7 @@ export default function BaseSlider({ img, title, carouselId }) {
                         <div className="carousel-item" key={index}>
                             <img src={item.img} className="d-block w-100" />
                             <div className="carousel-caption d-none d-md-block bg-light-blue-09 p-3">
-                                <h5>{title}</h5>
+                                <h5 className='cu-font-thin mb-0 mb-2 mt-2'>{title}</h5>
                             </div>
                         </div>
                     ))

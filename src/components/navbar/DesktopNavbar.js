@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/logo-190.png';
 import navbarResources from '../../resources/navbarResources';
 import DesktopNavItem from './DesktopNavItem';
+import facebook from '../../assets/img/facebook-300.png';
 
 export default function DesktopNavbar() {
 
@@ -21,8 +22,8 @@ export default function DesktopNavbar() {
                             <DesktopNavItem menu={item} submenu={item.childs} />
                         )}
                         <div className='ms-4 ps-2 d-flex flex-row flex-nowrap'>
-                            <a href='https://www.facebook.com/VillaFrangipaniWelcome/'><i class="bi bi-facebook text-white h3 mb-0"></i></a>
-                            <a href='https://www.instagram.com/villa_frangipani/'><i class="bi bi-instagram text-white h3 ms-4 ps-2 mb-0"></i></a>
+                            <a target="_blank" href='https://www.facebook.com/VillaFrangipaniWelcome/'><img className='fs-4 w-100' src={facebook} /></a>
+                            <a target="_blank" href='https://www.instagram.com/villa_frangipani/'><i class="bi bi-instagram text-white h3 ms-4 ps-2 mb-0"></i></a>
                         </div>
                         <div className='mx-4 book-btn'>
                             <button type="button" class="btn cu-bg-white light-blue py-3 px-4 book-btn"><Link className='light-blue text-decoration-none' to='/contact'>Book now</Link></button>

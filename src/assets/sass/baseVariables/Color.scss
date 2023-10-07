@@ -5,6 +5,7 @@ $light-gray-bg :#EAF1F6;
 $light-blue-08: rgba(63, 182, 195, 0.8);
 $light-blue-09: rgba(63, 182, 195, 0.9);
 $light-golden: #F6F4F2;
+$bali-blue: #3FC3B9;
 
 .light-blue {
     color: $light-blue;
@@ -20,6 +21,10 @@ $light-golden: #F6F4F2;
 
 .light-golden {
     color: $light-golden
+}
+
+.bali-blue {
+    color: $bali-blue;
 }
 
 .bg-light-blue {

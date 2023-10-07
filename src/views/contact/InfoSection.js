@@ -4,7 +4,7 @@ export default function InfoSection() {
     return (
         <div>
             <div>
-                <div className='cu-page-title light-blue fs-2 mb-4'>Contact us</div>
+                <div className='cu-font-thin light-blue fs-2 mb-4'>Contact us</div>
                 <div className='font-size-1-1 my-3'>Managed and marketed by:</div>
             </div>
             <div className='font-size-1-1'>

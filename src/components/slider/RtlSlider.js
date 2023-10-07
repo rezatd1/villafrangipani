@@ -9,7 +9,7 @@ export default function RtlSlider({ title, info, img, id }) {
         <BaseSlider img={img} title={title} carouselId={`carousel${id}`} />
       </div>
       <div className='col-12 col-lg-5 col-md-12 col-sm-12'>
-        <div className='slider-title light-blue h4 mt-3'>{title}</div>
+        <div className='cu-font-thin light-blue mt-3'>{title}</div>
         <div className='mt-4'>
           <ul>
             {info.map(item =>
