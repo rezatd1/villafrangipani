@@ -5,10 +5,12 @@ import Footer from '../../../components/footer/Footer';
 import CopyRight from '../../../components/copyright/CopyRight';
 import MapSection from './MapSection';
 import { Link } from 'react-router-dom';
+import MetaTag from '../../../components/metaTag/MetaTag';
 
 export default function Map() {
     return (
         <div className='bg-light-golden overflow-hidden'>
+        <MetaTag PageTitle='Map' metaDescription='Villa Frangipani Map' />
             <Navbar />
             <PageHeader
                 title='Easy access to the beaches of Canggu, and a wide range of restaurants, shops and services'

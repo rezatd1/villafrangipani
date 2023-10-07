@@ -9,7 +9,7 @@ export default function BeachclubsCard({ key, containerClassName, img, title, in
                 <div className='light-blue fw-bold fs-3 mt-4 mb-3'>{title}</div>
                 <div className='text-center fs-6 px-3 px-lg-5 px-md-5 px-sm-3'>{info1}</div>
                 <div className='text-center fs-6 px-3 px-lg-5 px-md-5 px-sm-3 my-4'>{info2}</div>
-                <button type="button" class="btn bg-light-blue font-size-1 text-white py-3 px-5 my-3"><a className='text-decoration-none text-white' href={buttonHref}>{button}</a></button>
+                <button type="button" class="btn bg-light-blue font-size-1 text-white py-3 px-5 my-3"><a className='text-decoration-none text-white' target="_blank" href={buttonHref}>{button}</a></button>
             </div>
         </div>
     )

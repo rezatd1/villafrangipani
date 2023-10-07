@@ -6,10 +6,12 @@ import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
 import PageHeader from '../../../components/pageHeader/PageHeader';
 import StaffResources from '../../../resources/StaffResource';
+import MetaTag from '../../../components/metaTag/MetaTag';
 
 export default function Staff() {
     return (
         <div className='bg-light-golden overflow-hidden'>
+            <MetaTag PageTitle='Staff' metaDescription='Villa Frangipani Staff' />
             <Navbar />
             <FullWidthBanner img='/assets/img/experience/staff/villa_frangipani_canggu_staff_CX4454.png' />
             <PageHeader title='Villa Frangipani Staff'

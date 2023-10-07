@@ -1,4 +1,6 @@
 import React from 'react';
+import rightArrow from '../../assets/img/right-arrow-60-white.png';
+import leftArrow from '../../assets/img/left-arrow-60-white.png';
 
 export default function BaseSlider({ img, title, carouselId }) {
 
@@ -23,14 +25,18 @@ export default function BaseSlider({ img, title, carouselId }) {
                     : null}
 
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target={`#${carouselId}`} data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target={`#${carouselId}`} data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-            </button>
+            {img.length > 1 ?
+                <>
+                    <button className="carousel-control-prev" type="button" data-bs-target={`#${carouselId}`} data-bs-slide="prev">
+                        <span aria-hidden="true"><img className='bg-middle-blue rounded-circle' src={leftArrow} /></span>
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target={`#${carouselId}`} data-bs-slide="next">
+                        <span aria-hidden="true"><img className='bg-middle-blue rounded-circle' src={rightArrow} /></span>
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                </> : ''
+            }
         </div >
     )
 }

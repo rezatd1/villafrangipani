@@ -1,14 +1,15 @@
 import React from 'react'
+import CopyRight from '../../../components/copyright/CopyRight'
+import Footer from '../../../components/footer/Footer'
+import MetaTag from '../../../components/metaTag/MetaTag'
 import Navbar from '../../../components/navbar/Navbar'
 import PageHeader from '../../../components/pageHeader/PageHeader'
-import MapSection from '../map/MapSection'
-import Footer from '../../../components/footer/Footer'
-import CopyRight from '../../../components/copyright/CopyRight'
 import NeighbourhoodSection from './NeighbourhoodSection'
 
 export default function Neighbourhood() {
     return (
         <div className='bg-light-golden overflow-hidden'>
+        <MetaTag PageTitle='Neighbourhood' metaDescription='Villa Frangipani Neighbourhood' />
             <Navbar />
             <PageHeader
                 title='Our Neighbourhood'

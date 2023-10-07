@@ -211,7 +211,7 @@ const Calendar = () => {
               alt="Previous Month"
             />
           </div>
-          <h2 className="h4 text-black">
+          <h2 className="cu-font-thin h2 mb-4 text-black">
             {new Intl.DateTimeFormat("en-US", {
               month: "long",
               year: "numeric",

@@ -11,10 +11,15 @@ import GallerySection from './GallerySection';
 import './home.scss';
 import FullWidthBanner from '../../components/banner/FullWidthBanner';
 import QuickFacts from './QuickFacts';
+import { Helmet } from 'react-helmet';
 
 export default function Home() {
     return (
         <div className='bg-light-golden'>
+            <Helmet>
+                <title>Villa Frangipani Canggu</title>
+                <meta name="description" content="Frangipani, your private villa in Canggu, Bali." />
+            </Helmet>
             <Navbar />
             <GalleryOne img={HomeResourses[0].img}
                 imgClassName={HomeResourses[0].imgClassName}

@@ -6,10 +6,12 @@ import Footer from '../../../components/footer/Footer';
 import Navbar from '../../../components/navbar/Navbar';
 import PageHeader from '../../../components/pageHeader/PageHeader';
 import FigureSection from './FigureSection';
+import MetaTag from '../../../components/metaTag/MetaTag';
 
 export default function Attractions() {
     return (
         <div className='bg-light-golden overflow-hidden'>
+            <MetaTag PageTitle='Attractions' metaDescription='Villa Frangipani Attractions' />
             <Navbar />
             <MarginWidthBanner className='full-banner-width' img='/assets/img/location/villa_frangipani_changgu_tegallalang,_rice_terraces.jpg' />
             <PageHeader
