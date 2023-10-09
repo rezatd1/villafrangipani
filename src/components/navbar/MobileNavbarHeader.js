@@ -15,7 +15,7 @@ export default function MobileNavbarHeader({ navContainerClassName, toggleIcon, 
                 <Link to='/'><img className='w-25' alt='Villa Frangipani' src={Logo} /></Link>
             </div>
             <div className='h4 pt-3 pe-4 pb-2 cursor-pointer' onClick={navbarToggler}>
-                <img className='w-75' src={toggleIcon} />
+                <img className='w-75' alt='toggle icon' src={toggleIcon} />
             </div>
         </div>
     );
