@@ -12,7 +12,7 @@ export default function Beachclubs() {
         <div className='bg-light-golden overflow-hidden'>
         <MetaTag PageTitle='Beach Clubs' metaDescription='Villa Frangipani Beach Clubs' />
             <Navbar />
-            <FullWidthBannerLighten img='/assets/img/experience/beachclubs/beach-clubs-in-bali.jpg' />
+            <FullWidthBannerLighten img='/assets/img/experience/beachclubs/beach-clubs-in-bali.webp' />
             <HeaderSection />
             <BeachclubsSection />
             <Footer />
