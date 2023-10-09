@@ -2,8 +2,8 @@ import React from 'react';
 import ReviewCard from '../../../components/cards/ReviewCard';
 import ReviewsResources from '../../../resources/ReviewsResources';
 import CommonHelper from '../../../utilities/commonHelper/CommonHelper';
-import RightArrow from '../../../assets/img/right-arrow-60-white.png';
-import LeftArrow from '../../../assets/img/left-arrow-60-white.png';
+import RightArrow from '../../../assets/img/right-arrow-60-white.webp';
+import LeftArrow from '../../../assets/img/left-arrow-60-white.webp';
 import './ReviewSection.scss';
 
 export default function ReviewsSection() {

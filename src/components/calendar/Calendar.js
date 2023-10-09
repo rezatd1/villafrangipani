@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Calendar.scss";
 import CommonHelper from "../../utilities/commonHelper/CommonHelper";
 
-import rightArrow from "../../assets/img/right-arrow-15-black.png";
-import leftArrow from "../../assets/img/left-arrow-15-black.png";
+import rightArrow from "../../assets/img/right-arrow-15-black.webp";
+import leftArrow from "../../assets/img/left-arrow-15-black.webp";
 
 import Hover from "./Hover";
 
@@ -177,7 +177,7 @@ const Calendar = () => {
           "$1-$2-$3T$4:$5:$6Z"
         ),
         IMAGE_URL:
-          "https://images.squarespace-cdn.com/content/v1/645efd8204ce186445584a41/1686472330572-RYWCHT1UOF8BO1YY9KFX/Booked-logo.png",
+          "https://images.squarespace-cdn.com/content/v1/645efd8204ce186445584a41/1686472330572-RYWCHT1UOF8BO1YY9KFX/Booked-logo.webp",
       });
     }
 

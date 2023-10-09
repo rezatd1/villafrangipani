@@ -1,19 +1,19 @@
 const FigureResources = [
     {
         id: 1,
-        img: '/assets/img/experience/family/villa_frangipani_canggu_river_pavilion_path_CX4023.png',
+        img: '/assets/img/experience/family/villa_frangipani_canggu_river_pavilion_path_CX4023.webp',
         title: 'The Grounds',
         text: 'Villa Frangipani Canggu is great for families. The Villa’s 1500sqm of lawns and pool area provide ample space for play. In fact, you don’t need to worry about packing any of the usual cumbersome kids’ equipment for your stay.  We provide a baby bath, bath toys, pool toys, a potty, and baby chair.  Just let us know what you need and anything we don’t have in-house can be easily hired at minimal additional cost, such as pool gates.  For older children there are swimming pool toys, flippers, and a croquet set. With three rooms in the main house, all on one level, wide doors to the bedrooms, and just a few steps down to the living pavilion, access and inclusion in all activities is easy for all ages at Villa Frangipani.'
     },
     {
         id: 2,
-        img: '/assets/img/experience/family/villa_frangipani_canggu_children_friendly_CX4840.png',
+        img: '/assets/img/experience/family/villa_frangipani_canggu_children_friendly_CX4840.webp',
         title: 'The Lumbung',
         text: 'Villa Frangipani’s lumbung has been lovingly restored to provide a tranquil setting next to the river,  to read a book or have a massage.   The upstairs storage area is setup for the as a children’s playroom, with children’s chairs, mats and toys – the perfect Balinese “tree house”.'
     },
     {
         id: 3,
-        img: '/assets/img/experience/family/villa_frangipani_canggu_mediaroom_X4787.png',
+        img: '/assets/img/experience/family/villa_frangipani_canggu_mediaroom_X4787.webp',
         title: 'Media Room',
         text: 'If it’s a rainy day or you just want some peace for a while, utilise the media room which is filled with kids toys, family games and a large 55” TV. The room has a large daybed for chilling out, or snuggling up with the kids.  Fast wifi internet access is available throughout the villa. '
     },

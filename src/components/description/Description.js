@@ -1,6 +1,6 @@
 import React from 'react';
 import './description.scss';
-import img from '../../assets/img/home/Frangi+Carving+optimised.png'
+import img from '../../assets/img/home/Frangi+Carving+optimised.webp'
 
 export default function Description() {
     return (

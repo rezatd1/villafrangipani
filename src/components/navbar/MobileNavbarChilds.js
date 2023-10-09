@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import leftArrow from '../../assets/img/right-arrow-10.png';
+import leftArrow from '../../assets/img/right-arrow-10.webp';
 
 export default function MobileNavbarChilds({ childs, onBackClick }) {
   const [transitionStatus, setTransitionStatus] = useState(false);

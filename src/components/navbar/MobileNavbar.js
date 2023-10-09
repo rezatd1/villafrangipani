@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import collapseIcon from '../../assets/img/navbar-collapsed-icon (3).png';
-import expandIcon from '../../assets/img/navbar-expand-icon.png';
+import collapseIcon from '../../assets/img/navbar-collapsed-icon (3).webp';
+import expandIcon from '../../assets/img/navbar-expand-icon.webp';
 import navbarResources from '../../resources/navbarResources';
 import MobileNavbarHeader from './MobileNavbarHeader';
 import MobileNavbarItem from './MobileNavbarItem';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../../assets/img/logo-220.png';
+import Logo from '../../assets/img/logo-220.webp';
 import { Link } from 'react-router-dom';
 
 export default function MobileNavbarHeader({ navContainerClassName, toggleIcon, onToggle, childsSetter }) {

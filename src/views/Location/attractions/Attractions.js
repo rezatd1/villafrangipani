@@ -13,7 +13,7 @@ export default function Attractions() {
         <div className='bg-light-golden overflow-hidden'>
             <MetaTag PageTitle='Attractions' metaDescription='Villa Frangipani Attractions' />
             <Navbar />
-            <MarginWidthBanner className='full-banner-width' img='/assets/img/location/villa_frangipani_changgu_tegallalang,_rice_terraces.jpg' />
+            <MarginWidthBanner className='full-banner-width' img='/assets/img/location/villa_frangipani_changgu_tegallalang,_rice_terraces.webp' />
             <PageHeader
                 title='Exploring Bali Attractions'
                 text="Explore Bali's stunning landscapes and cultural sites, including Uluwatu Temple, Tegalalang Rice Terraces, Mount Batur, and Lempuyang Temple. Surf the island's legendary breaks and trek to Nusa Penida's hidden beaches."

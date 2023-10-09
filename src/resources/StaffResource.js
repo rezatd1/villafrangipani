@@ -1,7 +1,7 @@
 const StaffResources = [
     {
         id: 1,
-        img: '/assets/img/experience/staff/villa_frangipani_canggu_pool_pavilion_CX4644.png',
+        img: '/assets/img/experience/staff/villa_frangipani_canggu_pool_pavilion_CX4644.webp',
         title1: 'Villa Manager',
         text1: 'Villa Frangipani Canggu’s manager, Bapak Rai Wardana, is responsible for the overall operation of the villa estate including staffing, special requests and guest satisfaction. ',
         title2: 'Full Time Chef',
@@ -9,7 +9,7 @@ const StaffResources = [
     },
     {
         id: 2,
-        img: '/assets/img/experience/staff/villa_frangipani_canggu_river_relax_CX4743.png',
+        img: '/assets/img/experience/staff/villa_frangipani_canggu_river_relax_CX4743.webp',
         title1: 'Butler',
         text1: 'Ibu Kadek, our able butler, is available throughout the day and through dinner service if required. She would be your first point of call for queries, and booking of tours, spa sessions, or other trips outside the villa, and speaks excellent English.',
         title2: 'Housekeeping',
@@ -17,7 +17,7 @@ const StaffResources = [
     },
     {
         id: 3,
-        img: '/assets/img/experience/staff/villa_frangipani_canggu_spa_massage.jpg',
+        img: '/assets/img/experience/staff/villa_frangipani_canggu_spa_massage.webp',
         title1: 'Spa Therapist',
         text1: 'A nearby spa therapist is available to provide a wide menu of spa treatments at Villa Frangipani Canggu, from 9am to 9pm. The villa is equipped with two portable massage beds or you can enjoy a massage by the river at the lumbung.',
         title2: 'Garden & Pool',
@@ -25,7 +25,7 @@ const StaffResources = [
     },
     {
         id: 4,
-        img: '/assets/img/experience/staff/villa_frangipani_canggu_pool_pavilion_CX4644.png',
+        img: '/assets/img/experience/staff/villa_frangipani_canggu_pool_pavilion_CX4644.webp',
         title1: 'Security',
         text1: 'Villa Frangipani Canggu is kept safe and secure by a team of security guards working rotating shifts at night. They patrol the grounds of the villa discretely.   The river boundary is also discretely fenced to maximise safety for youngsters.',
         title2: '',

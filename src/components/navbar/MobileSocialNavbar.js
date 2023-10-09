@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import facebook from '../../assets/img/facebook-30.png';
+import facebook from '../../assets/img/facebook-30.webp';
 
 export default function MobileSocialNavbar() {
     return (

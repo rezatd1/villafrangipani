@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Icon from '../../assets/img/left-arrow-10.png'
+import Icon from '../../assets/img/left-arrow-10.webp'
 
 export default function MobileNavbarItem({ keyId, className, onClick, linkClassName, name, imgClassName }) {
     return (

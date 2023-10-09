@@ -1,6 +1,6 @@
 import React from 'react';
-import rightArrow from '../../assets/img/right-arrow-60-white.png';
-import leftArrow from '../../assets/img/left-arrow-60-white.png';
+import rightArrow from '../../assets/img/right-arrow-60-white.webp';
+import leftArrow from '../../assets/img/left-arrow-60-white.webp';
 
 export default function BaseSlider({ img, title, carouselId }) {
 

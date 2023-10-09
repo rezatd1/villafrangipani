@@ -13,7 +13,7 @@ export default function FigureSection() {
                     </div>)}
             </div>
             <div className='mx-2'>
-                <MarginWidthBanner className='full-banner-width-fvh' img='/assets/img/location/attractions/villa_frangipani_canggu_attractions_beaches.jpg' />
+                <MarginWidthBanner className='full-banner-width-fvh' img='/assets/img/location/attractions/villa_frangipani_canggu_attractions_beaches.webp' />
             </div>
             <div className='mx-2 mx-lg-5 mx-md-4 mx-sm-2'>
                 {AttractionsResources[1].info.map(item =>

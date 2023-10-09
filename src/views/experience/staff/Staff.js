@@ -13,7 +13,7 @@ export default function Staff() {
         <div className='bg-light-golden overflow-hidden'>
             <MetaTag PageTitle='Staff' metaDescription='Villa Frangipani Staff' />
             <Navbar />
-            <FullWidthBanner img='/assets/img/experience/staff/villa_frangipani_canggu_staff_CX4454.png' />
+            <FullWidthBanner img='/assets/img/experience/staff/villa_frangipani_canggu_staff_CX4454.webp' />
             <PageHeader title='Villa Frangipani Staff'
                 text='One of the greatest benefits of staying at Villa Frangipani Canggu is the personalised service provided by our team of long serving, dedicated staff. Villa Frangipani’s staff have been professionally trained and will do their utmost to please with their warm and friendly Balinese hospitality.'
                 titleClassName='text-black font-size-2-1'

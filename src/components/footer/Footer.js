@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/img/full-logo-footer.png';
+import logo from '../../assets/img/full-logo-footer.webp';
 import footerResourses from '../../resources/FooterResources';
 import './Footer.scss';
 import LeftFooter from './LeftFooter';

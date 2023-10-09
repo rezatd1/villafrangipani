@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/img/logo-190.png';
+import Logo from '../../assets/img/logo-190.webp';
 import navbarResources from '../../resources/navbarResources';
 import DesktopNavItem from './DesktopNavItem';
-import facebook from '../../assets/img/facebook-300.png';
+import facebook from '../../assets/img/facebook-300.webp';
 
 export default function DesktopNavbar() {
 
