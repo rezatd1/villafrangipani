@@ -7,6 +7,6 @@ export default function MobileNavbarItem({ keyId, className, onClick, linkClassN
     return (
         <div key={keyId} className={className} onClick={onClick}>
             <Link className={linkClassName} >{name}</Link>
-            <img className={imgClassName} src={Icon}></img>
+            <img alt={name} className={imgClassName} src={Icon}></img>
         </div>)
 }

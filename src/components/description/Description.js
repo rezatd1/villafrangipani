@@ -14,7 +14,7 @@ export default function Description() {
                 The master bedroom and the river pavilion both have king and queen beds, with large garden bathrooms showcasing customised sandstone carvings, and outdoor rain showers and bathtubs.<br /><br />
 
                 All bedrooms are fully airconditioned as well as providing fans and mosquito nets to ensure a comfortable nights rest.  The recent renovations included replacement of all pillows, mattresses, bedlinens and towels.  </div><br /><br />
-            <img className='col-12 col-lg-4 col-md-4 col-sm-12 cu-description-img ms-2 ms-lg-0 ms-md-0 ms-sm-2 mt-2' src={img} />
+            <img className='col-12 col-lg-4 col-md-4 col-sm-12 cu-description-img ms-2 ms-lg-0 ms-md-0 ms-sm-2 mt-2' alt='Frangi Carving' src={img} />
         </div >
     )
 }

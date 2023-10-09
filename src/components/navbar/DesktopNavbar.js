@@ -11,7 +11,7 @@ export default function DesktopNavbar() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary bg-light-blue">
             <div className="container-fluid">
                 <Link className="navbar-brand ps-4 ms-2" to="/">
-                    <img className='w-75' src={Logo} />
+                    <img className='w-75' alt='navbar logo' src={Logo} />
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@ export default function DesktopNavbar() {
                             <DesktopNavItem menu={item} submenu={item.childs} />
                         )}
                         <div className='ms-4 ps-2 d-flex flex-row flex-nowrap'>
-                            <a target="_blank" href='https://www.facebook.com/VillaFrangipaniWelcome/'><img className='fs-4 w-100' src={facebook} /></a>
+                            <a target="_blank" href='https://www.facebook.com/VillaFrangipaniWelcome/'><img className='fs-4 w-100' alt='facebook logo' src={facebook} /></a>
                             <a target="_blank" href='https://www.instagram.com/villa_frangipani/'><i class="bi bi-instagram text-white h3 ms-4 ps-2 mb-0"></i></a>
                         </div>
                         <div className='mx-4 book-btn'>

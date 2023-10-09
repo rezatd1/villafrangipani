@@ -51,12 +51,12 @@ export default function ReviewsSection() {
                 </div>
                 <button className="carousel-control-prev review-slider-icon-left" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span>
-                        <img src={LeftArrow} className='bg-light-blue rounded-circle' />
+                        <img src={LeftArrow} alt='left arrow' className='bg-light-blue rounded-circle' />
                     </span>
                 </button>
                 <button className="carousel-control-next review-slider-icon-right" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span>
-                        <img src={RightArrow} className='bg-light-blue rounded-circle' />
+                        <img src={RightArrow} alt='right arrow' className='bg-light-blue rounded-circle' />
                     </span>
                 </button>
             </div>
