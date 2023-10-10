@@ -9,7 +9,7 @@ import MetaTag from '../../../components/metaTag/MetaTag';
 export default function Dining() {
     return (
         <div className='bg-light-golden'>
-            <MetaTag PageTitle='Dining' metaDescription='Dining in Villa Frangipani' />F
+            <MetaTag PageTitle='Dining' metaDescription='Dining in Villa Frangipani' />
             <Navbar />
             <Title />
             <SliderSection />

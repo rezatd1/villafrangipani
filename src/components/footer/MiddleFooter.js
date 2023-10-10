@@ -1,5 +1,6 @@
 import React from 'react';
 import footerResourses from '../../resources/FooterResources';
+import { Link } from 'react-router-dom';
 
 export default function MiddleFooter() {
     return (
@@ -8,7 +9,7 @@ export default function MiddleFooter() {
                 <div className='light-blue h4 mb-4'><strong>NAVIGATION</strong></div>
                 <div className='row'>
                     {footerResourses.length > 1 ?
-                        footerResourses.map(Item => <div className='col-6 font-size-1-1 mt-2'>{Item}</div>) : null
+                        footerResourses.map(Item => <Link key={Item.id} to={Item.Route} className='col-6 font-size-1-1 mt-2 text-black text-decoration-none'>{Item.name}</Link>) : null
                     }
                 </div>
             </div>

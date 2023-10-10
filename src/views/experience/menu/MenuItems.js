@@ -6,7 +6,7 @@ export default function MenuItems({ resource }) {
             <p className='cu-font-thin h4 text-black'>{resource.page}</p>
             {resource.info.map((item) => {
                 return item.text === null ? (
-                    <div key={item.id} className='cu-font-thin h5 text-black fw-bold mt-5 text-center lh-lg'>{item.title}</div>
+                    <div key={item.id} className=' h5 text-black fw-bold mt-5 text-center lh-lg'>{item.title}</div>
                 ) : (
                     item.text === 1 ? (
                         <div key={item.id} className='mt-5 d-flex justify-content-center align-items-center flex-column mx-2 px-4 mx-lg-5 px-lg-5 mx-md-5 px-md-5 mx-sm-2 px-sm-4'>
