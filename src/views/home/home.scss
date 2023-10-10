@@ -9,3 +9,34 @@
 .gallery-section {
     overflow-x: hidden;
 }
+
+.main-banner-height {
+    height: 50vh; // Default height for small screens
+
+    // Set height to 70% for medium screens
+    @media (min-width: 768px) {
+        height: 70vh;
+    }
+
+    // Set height to 100% for large screens
+    @media (min-width: 992px) {
+        height: 100vh;
+    }
+}
+
+.text-class {
+    height: fit-content;
+    position: relative;
+    top: 55%;
+
+    @media (min-width: 768px) {
+        top: 55%;
+
+    }
+
+    // Set height to 100% for large screens
+    @media (min-width: 992px) {
+        top: 45%;
+
+    }
+}

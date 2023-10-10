@@ -21,7 +21,7 @@ const AttractionsResources = [
         },
         {
             id: 4,
-            img: '/assets/img/location/attractions/villa_frangipani_Pura_Lempuyang_temple_aka_+gates_+of_+heaven_balli.webp',
+            img: '/assets/img/location/attractions/villa_frangipani_Pura_Lempuyang_temple_aka_-gates_-of_-heaven_balli-_1_.webp',
             title: 'Nusa Penida',
             text: "Nusa Penida is a small island located southeast of Bali, known for its stunning beaches, crystal clear waters, and natural landmarks like Angel's Billabong and Kelingking Beach. It's a popular destination for day trips or longer stays and offers opportunities for snorkeling, diving, and exploring the island's natural beauty. There are several tour companies that offer full-day or half-day tours of the island."
         },]
@@ -29,30 +29,30 @@ const AttractionsResources = [
     {
         id: 2, info: [{
             id: 1,
-            img: '/assets/img/location/attractions/villa_frangipani_Pura_Lempuyang_temple_aka_+gates_+of_+heaven_balli.webp',
+            img: '/assets/img/location/attractions/villa_frangipani_Pura_Lempuyang_temple_aka_-gates_-of_-heaven_balli-_1_.webp',
             title: 'Lempuyang Temple Pura aka "Gates of Heaven"',
             text: 'Lempuyang Temple, also known as Pura Lempuyang Luhur, is a complex of seven temples located in East Bali, Indonesia. It is a popular destination for tourists who come to see the "Gates of Heaven" and take in the stunning panoramic views of Mount Agung. The temple is also a significant spiritual site for the Balinese people.',
         },
         {
-            id: 1,
+            id: 2,
             img: '/assets/img/location/attractions/villa_frangipani_canggu_surfing_bali.webp',
             title: 'Surfing',
             text: 'Bali is known for its world-class surfing spots, with waves that cater to both beginners and experienced surfers. Some of the popular surfing spots in Bali include Kuta Beach, Uluwatu, Padang Padang, Canggu, and Bingin Beach. Each spot offers different types of waves and conditions, making Bali a great destination for surfers of all levels.',
         },
         {
-            id: 1,
-            img: '/assets/img/location/attractions/villa_frangipani_uluwatu_temple.webp',
+            id: 3,
+            img: '/assets/img/location/attractions/villa_frangipani_uluwatu_temple-_1_.webp',
             title: 'Uluwatu Temple',
             text: "Uluwatu Temple is a stunning sea temple located on a cliff in South Bali, offering breathtaking sunset views and a unique cultural experience. It is one of Bali's six key temples and is home to a colony of friendly monkeys.",
         },
         {
-            id: 1,
+            id: 4,
             img: '/assets/img/location/attractions/villa_frangipani_changgu_tegallalang,_rice_terraces.webp',
             title: 'Tegalalang Rice Terrace',
             text: 'Tegalalang Rice Terrace is a popular tourist attraction located in Ubud, Bali. The stunning rice paddies offer beautiful panoramic views and are a must-see for anyone visiting Bali.',
         },
         {
-            id: 1,
+            id: 5,
             img: '/assets/img/location/attractions/villa_frangipani_canggu_mount_batur_trek_sunrise.webp',
             title: 'Mount Batur',
             text: 'Mount Batur is an active volcano located in the Bangli regency of Bali. Hiking to the summit to watch the sunrise is a popular activity for tourists, offering stunning views of the surrounding mountains and Lake Batur. The trek is moderate in difficulty and usually takes around 2 hours.',

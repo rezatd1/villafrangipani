@@ -20,7 +20,7 @@ Arrival Date: ${document.getElementById('arrivalDate').value}
 Departure Date: ${document.getElementById('departureDate').value}
 Message: ${document.getElementById('message').value}`;
 
-    const mailtoUrl = `mailto:info@baliluxuryvillas.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoUrl = `mailto:contact@villafrangipani.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
   };
 

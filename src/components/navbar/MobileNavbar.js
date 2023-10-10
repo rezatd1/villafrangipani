@@ -42,6 +42,7 @@ export default function MobileNavbar() {
           <div className={`c-mobile-submenu z-1 w-100 pt-2 ps-4 ms-1 mt-5 ${!slideEndTransition ? 'c-slide-start' : 'c-slide-end'}`}>
             {navbarResources.map(item => (
               <MobileNavbarItem
+                route={item.childs.length > 0 ? '' : item.route}
                 key={item.id}
                 className={item.className}
                 onClick={() => {
