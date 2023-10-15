@@ -4,7 +4,10 @@ import { countries } from "../../resources/contactResources";
 import "./contact.scss";
 
 export default function ContactSection() {
-  const [selectedCountry, setSelectedCountry] = useState("0");
+  const [selectedCountry, setSelectedCountry] = useState({
+    name: "0",
+    phoneCode: "+65"
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,12 +16,22 @@ export default function ContactSection() {
 
   const sendEmail = () => {
     const subject = 'New Contact Form Submission';
-    const body = `Name: ${document.getElementById('firstname').value} ${document.getElementById('lastname').value}
-Phone: ${selectedCountry.phoneCode} ${document.getElementById('number').value}
-Email: ${document.getElementById('email').value}
-Arrival Date: ${document.getElementById('arrivalDate').value}
-Departure Date: ${document.getElementById('departureDate').value}
-Message: ${document.getElementById('message').value}`;
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const phoneNumber = document.getElementById('number').value;
+    const email = document.getElementById('email').value;
+    const arrivalDate = document.getElementById('arrivalDate').value;
+    const departureDate = document.getElementById('departureDate').value;
+    const message = document.getElementById('message').value;
+
+    const selectedPhoneCode = selectedCountry ? selectedCountry.phoneCode : '';
+
+    const body = `Name: ${firstName} ${lastName}
+Phone: ${selectedPhoneCode} ${phoneNumber}
+Email: ${email}
+Arrival Date: ${arrivalDate}
+Departure Date: ${departureDate}
+Message: ${message}`;
 
     const mailtoUrl = `mailto:contact@villafrangipani.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoUrl;
