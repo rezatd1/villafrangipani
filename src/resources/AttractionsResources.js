@@ -21,7 +21,7 @@ const AttractionsResources = [
         },
         {
             id: 4,
-            img: '/assets/img/location/attractions/villa_frangipani_Pura_Lempuyang_temple_aka_-gates_-of_-heaven_balli-_1_.webp',
+            img: '/assets/img/location/attractions/nusa-penida.webp',
             title: 'Nusa Penida',
             text: "Nusa Penida is a small island located southeast of Bali, known for its stunning beaches, crystal clear waters, and natural landmarks like Angel's Billabong and Kelingking Beach. It's a popular destination for day trips or longer stays and offers opportunities for snorkeling, diving, and exploring the island's natural beauty. There are several tour companies that offer full-day or half-day tours of the island."
         },]

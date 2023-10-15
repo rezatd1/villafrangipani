@@ -21,7 +21,6 @@ $bg: #f6f4f2;
   .side {
     width: 40%;
     padding: 0 20px;
-    text-transform: capitalize;
     align-self: flex-start;
     &__header__1 {
       font-size: 2rem;
@@ -30,7 +29,7 @@ $bg: #f6f4f2;
     }
     &__header__2 {
       font-size: 1.1rem;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 2.5;
     }
     .par {

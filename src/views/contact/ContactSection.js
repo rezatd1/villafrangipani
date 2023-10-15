@@ -27,12 +27,12 @@ Message: ${document.getElementById('message').value}`;
   return (
     <section className="contactContainer">
       <side className="side">
-        <h2 className="side__header__1">contact us</h2>
-        <h5 className="side__header__2">managed and marketed by:</h5>
+        <h2 className="side__header__1">Contact us</h2>
+        <h5 className="side__header__2">Managed and marketed by:</h5>
 
-        <p className="par">bali luxury villas</p>
-        <p className="par">tel: +62 361-754344</p>
-        <p className="par">email: info@baliluxuryvillas.com</p>
+        <p className="par fw-bold">Bali Luxury Villas</p>
+        <p className="par">Tel: +62 361-754344</p>
+        <p className="par">Email: info@baliluxuryvillas.com</p>
       </side>
 
       <form className="form" onSubmit={handleSubmit}>
