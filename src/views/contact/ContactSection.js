@@ -48,7 +48,7 @@ Message: ${message}`;
         <p className="par">Email: info@baliluxuryvillas.com</p>
       </side>
 
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form" action="https://submit-form.com/KyQy34RA">
         {/* Name */}
         <h2 className="form__name">
           name <span className="form__name__required">(required)</span>
@@ -56,11 +56,11 @@ Message: ${message}`;
         <div className="form__name__wrapper wrapper">
           <div className="form__name__firstname">
             <label htmlFor="firstname">first name</label>
-            <input type="text" id="firstname" />
+            <input type="text" id="firstname" name='First Name' />
           </div>
           <div className="form__name__lastname">
             <label htmlFor="lastname">last name</label>
-            <input type="text" id="lastname" />
+            <input type="text" id="lastname" name='Last Name' />
           </div>
         </div>
 
@@ -72,6 +72,7 @@ Message: ${message}`;
             <select
               className="form__phone__country__select"
               id="country"
+              name='Country Code'
               onChange={(e) =>
                 setSelectedCountry(
                   countries.find((country) => country.name === e.target.value)
@@ -85,7 +86,7 @@ Message: ${message}`;
           </div>
           <div className="form__phone__number">
             <label htmlFor="number">number</label>
-            <input type="text" id="number" placeholder={selectedCountry.phoneCode} />
+            <input type="text" id="number" name='Number' placeholder={selectedCountry.phoneCode} />
           </div>
         </div>
 
@@ -94,7 +95,7 @@ Message: ${message}`;
           <label htmlFor="email">
             email <span className="form__email__required">(required)</span>
           </label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name='Email'/>
         </div>
 
         {/* Date */}
@@ -104,14 +105,14 @@ Message: ${message}`;
             <label className="form__date__arrival__label">
               Interested Arrival Date
             </label>
-            <input type="date" className="form__date__arrival__input" id="arrivalDate" />
+            <input type="date" className="form__date__arrival__input" name='Arrival Date' id="arrivalDate" />
           </div>
           <div className="form__date__departure wrapper">
             <label className="form__date__departure__label">
               Interested Departure Date
             </label>
             {/* departure date */}
-            <input type="date" className="form__date__departure__input" id="departureDate" />
+            <input type="date" name='Departure Date' className="form__date__departure__input" id="departureDate" />
           </div>
         </div>
 
@@ -120,7 +121,7 @@ Message: ${message}`;
           <label className="form__message__label">
             Message <span className="form__message__required">(required)</span>
           </label>
-          <textarea className="form__message" id="message" />
+          <textarea name='Message' className="form__message" id="message" />
         </div>
 
         <button type="submit" value="send" className="form__submit">
